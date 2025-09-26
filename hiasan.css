@@ -1,0 +1,80 @@
+*,
+html{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    top : 0;
+    display: inline-block;
+}
+
+.paragraf {
+    line-height: 1.6;
+    text-align: justify;
+    word-spacing: 4px;
+    margin: 16px;
+    font-size: 16px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.content1{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin: auto; 
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content:right;
+    align-items: right;
+}
+
+.li-navbar {
+    list-style-type: none;
+    padding: 10px 5px;
+    margin: 3px;
+}
+
+.li-navbar2 {
+    list-style-type: none;
+    padding: 10px 5px;
+    margin: 3px;
+    display: flex;
+    justify-content: left;
+    align-items:left;
+}
+
+.a {
+    text-decoration: none;
+    color: #F5FAE1;
+    font-size: 12px;
+}
+
+.btn1{
+    background-color: #4CAF50; /* hijau */
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.judul{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.ddiri {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    margin: 20px;
+}
