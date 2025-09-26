@@ -1,0 +1,117 @@
+*,
+.html {
+    padding: 0;
+}
+
+.bg{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f2e6ee, #977dff);
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(207, 228, 227, 0.699);
+}
+
+
+.paragraf{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.heading1{
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    background: linear-gradient(to right, #7226ff, #160078, #010030); 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.heading2, .heading3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+
+.ul-navbar {
+    display: flex;
+    justify-content: right; 
+    align-items: center;            
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.ul-navbar2 {
+    display: flex;            
+    justify-content:flex-start; 
+    align-items: center;        
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none; 
+    gap: 5px;
+}
+
+
+.li-navbar,
+.li-navbar2 {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+
+.li-navbar2 {
+    font-family: 'Times New Roman', serif;
+    justify-content: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.btn1 {
+    background-color: #977dff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 10px;
+}
+
+.btn1:hover {
+    background-color: #7226ff;
+    transform: scale(1,1);
+}
+
+.btn1 a {
+    color: white;            
+    text-decoration: none;    
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.bawah{
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    display: flex;
+    font-size: medium;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    inline-size: 1.5;
+}
