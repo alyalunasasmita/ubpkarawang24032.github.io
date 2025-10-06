@@ -1,0 +1,92 @@
+.bg{
+    background-color: #F5F5F0;
+}
+
+.ul_navbar{
+    display: flex;            
+    justify-content:flex-start; 
+    align-items: center;        
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none; 
+    gap: 10px;
+    background-color: #C2A68C;
+}
+
+.li_navbar{
+    font-family: 'Times New Roman', Times, serif;
+    color: #F5F5F0;
+
+}
+
+.btn{
+    padding: 10px ;
+    background-color: #5D866C;
+    border: none;
+    border-radius: 5px;
+}
+.a {
+    text-decoration: none;
+    color: #F5F5F0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(207, 228, 227, 0.699);
+}
+
+
+.paragraf{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;       
+    line-height: 1.7;      
+    text-align: justify;   
+    color: #333;           
+    max-width: 600px;      
+    margin: 10px auto;     
+    padding: 0 10px; 
+    text-decoration: none;
+}
+
+.heading1{
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 15px;
+    background-color:#96A78D; 
+    background-clip: text;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.heading2, .heading3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: bold;
+    background-clip: text;
+    color: #B6CEB4;
+    border: 1px;
+
+}
+
+.gambar{
+    text-align: center;
+    margin: 20px auto;
+}
+.gambar img{
+    max-width: 80%;
+    height: auto;
+}
+.gambar figcaption{
+    font-size: 14px;
+    color:#333;
+    margin-top: 5px;
+    font-style: italic;
+}
