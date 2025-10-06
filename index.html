@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Entity Relationship Diagram</title>
+        <link rel="stylesheet" href="desain.css">
+    </head>
+    <body class="bg">
+        <!---Navbar-->
+        <ul class="ul-navbar2">
+        <li  class="li-navbar2">Alyaluna Sasmita</li>
+        <li class="li-navbar2">24032</li>
+        <li class="li-navbar">
+            <button class="btn1">
+            <a href="https://ubpkarawang.ac.id/" target="_blank">UNIVERSITAS BUANA PERJUANGAN KARAWANG</a>
+            </button>
+        </li>
+        <li class="li-navbar">
+            <button class="btn1">
+            <a href="#" target="_blank">Github</a>
+            </button>
+        </ul>
+        <h1 class="header1">Entity Relationship Diagram (ERD)</h1>
+        <h2 class="header2">Konsep ERD</h2>
+        <p class="paragraf">
+            ERD adalah visualisasi yang digunakan untuk merancang dan memvisualisasikan suatu struktur data dalam 
+            sebuah informasi biasanya berfokus pada komponen utama yaitu: Entity dan Relasi.
+        </p>
+        <p class="paragraf"> Entity adalah Objek yang dapat di indetifikasi dalam sistem, contoh seperti dalam lingkup universitas
+            terdapat dosen, mahasiswa atau mata kuliah. setiap entitas memiliki atribut yang merupakan 
+            informasi dari masing-masing entity. Misalnya pada entitas Mahasiswa, terdapat atribut NIM, dan nama 
+            mahasiswa itu sendiri. sedangkan relasi adalah hubungan dari antar entitas itu sendiri. 
+        </p>
+        <p class="paragraf">
+            Dalam ERD, entitas di representasikan sebagai kotak atau persegi panjang sementara relasi di representasikan
+            dengan garis yang menghubungkan kotak-kotak entitas. Diagram memberikan gambaran bagaimana entitas saling 
+            terhubung satu sama lain yang memudahkan pengembang untuk merancang database yang efisien dan efektif.
+        </p>
+        <p class="paragraf">terdapat juga simbol-simbol tertentu yang mewakili berbagai elemen. misal entity digambarkan dengan kotak dan atribut 
+            ditampilkan dalam bentuk elips yang terhubungdengan entitas. Relasi sering digambarkandengan rombus atau diamond
+            yang terhubung ke entitas terkait. Kardinalitas, yang menunjukan jumlah instansi entitsa yang dpaat terhubungn satu sama lain 
+            dalam suatu relasi. 
+        </p>
+        <p class="paragraf">
+            penerapan ERD dalam perancangan database melibarkan beberapa tahap. Tahap pertama adalah indentifikasi entitas dan 
+            atribut yang relavan dengan sistem. setelah itu definisikan entitas dan atribut dengan jelas lalu gambarkan ERD dengan
+            visual yang jelas dan yang terakhir visualisasikan rancangan terhadap DBMS
+        </p>
+        <h2 class="header2">Entitas, Atribut, dan Hubungan dalam ERD</h2>
+        <ul>
+            <li class="list"><h3 class="header3" style="text-decoration: underline;">Entitas</h3>
+            <p class="paragraf">
+                Entitas adalah objek atau konsep yang dapat diidentifikasi secara unik dalam suatu sistem. Dalam ERD, Entitas
+                digambarkan dengan kotak atau persegi panjang yang diberi nama sesuai dengan objek yang diwakilinya, Entitas memiliki atribut 
+                yang memiliki informasi terkait entitas tersebut. Entitas dikelompokan menjadi 2 yaitu entitas kuat (strong entity) yang dapat berdiri sendiri dan 
+                entitas lemah (weak entity) yang bergantung pada entitas lain.
+            </p></li>
+            <li class="list"><h3 class="header3" style="text-decoration: underline;">Atribut</h3>
+            <p class="paragraf">
+                Atribut adalah Karakteristik atau properti dari entitas yang berisi informasi lebih detail dari entitas tersebut. 
+                Atribut digambarkan sebagai elips yang terhubung ke kotak entitasdengan garis, berikut beberapa jenis atribut. 
+            </p></li>
+            <ul>
+                <li class="list2"><b>Atribut Sederhana: </b>tidak dapat dibagi lagi, seperti 'nomor telepon'</li>
+                <li class="list2"><b>Atribut Komposit:</b> Dapat dibagi menjadi atribut yang lebih kecil, seperti 'Alamat' yang bisa terdiri dari
+                'jalan','kota', dan 'kode pos'.</li>
+                <li class="list2"><b>Atribut Multivalued:</b> Atribut yang memiliki lebih dari satu nilai.</li>
+                <li class="list2"><b>Atribut derivatif:</b> Nilai yang dapat dihitung dari Atribut lain, seperti 'usia' yang dapai dihitung dari 'tanggal lahir'</li>
+            </ul>
+            <li class="list"><h3 class="header3" style="text-decoration: underline;">Relasi</h3>
+            <p class="paragraf">
+                Relasi (Hubungan) menggambarkan bagaimana entitas berinteraksi atau saling berhubungan satu sama lain. Dalam ERD, hubugan digambarkan dengan 
+                rombus atau diamond yang terhubung dengan garis dari satu entitas ke entitas lain. Ada beberapa jenis relasi, diantaranya:
+            </p></li>
+            <ul>
+                <li class="list2"><b> Relasi satu ke satu (One to one / 1:1):</b> relasi satu entitas ke satu entitas lainnya. Contohnya, Relasi 'mahasiswa' dan 'kartu mahasiswa'
+                dimana satu mahasiswa hanya memiliki satu kartu mahasiswa dan satu kartu mahasiswa hanya dimiliki oleh satu mahasiswa</li>
+                <li class="list">
+                    <figure class="gambar">
+                        <img src="one to one.png" alt="#">
+                        <figcaption>Gambar 1. Contoh Relasi One to One</figcaption>
+                    </figure>
+                </li>
+
+                <li class="list2"><b>Relasi Satu ke banyak (one to many): </b> Relasi dari satu entitas ke banyak entitas. Contonya 'dosen wali' dan 'mahasiswa', di mana satu wali dosen dapat membimbing
+                banyak mahasiswa sedangkan satu mahasiswa mendapatkan satu wali dosen.</li>
+                <li>
+                    <li class="list">
+                    <figure class="gambar">
+                        <img src="one to many.png" alt="#">
+                        <figcaption>Gambar 2. Contoh Relasi One to Many</figcaption>
+                    </figure>
+                </li>
+
+                <li class="list2"><b>Relasi banyak ke banyak (many to many): </b> Relasi dari banyak entitas ke banyak entitas lainnya. contoh 'kursus' dan 'Siswa'
+                di mana setiap siswa dapat mengambil banyak kursus dan setiap kursus dapat diambil oleh banyak siswa.</li>
+                <li class="list"><li class="list">
+                    <figure class="gambar">
+                        <img src="many to many.png" alt="#">
+                        <figcaption>Gambar 3. Contoh Relasi Many to Many</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </ul>
+
+
+            
+        </ul>
+    </body>
+</html>

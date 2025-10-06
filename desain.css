@@ -1,0 +1,143 @@
+.header1{
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-family: 'Trebuchet MS';
+    
+}
+
+.bg{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, );
+}
+
+.ulnavbar{
+    display: flex;
+    justify-content: right; 
+    align-items: center;            
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.linavbar{
+    font-family: 'Times New Roman', serif;
+    justify-content: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+.paragraf{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;       
+    line-height: 1.7;      
+    text-align: justify;   
+    color: #333;           
+    max-width: 600px;      
+    margin: 10px auto;     
+    padding: 0 10px; 
+    text-decoration: none;
+}
+
+.header2, .header3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;      
+    line-height: 1.7;     
+    text-align: justify;   
+    color: #333;          
+    max-width: 600px;      
+    margin: 10px auto;    
+    padding: 0 10px; 
+}
+
+.list{
+    list-style-type: none;
+}
+
+.gambar{
+    text-align: center;
+    margin: 20px auto;
+}
+.gambar img{
+    max-width: 80%;
+    height: auto;
+}
+.gambar figcaption{
+    font-size: 14px;
+    color:#333;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.list2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;      
+    line-height: 1.7;     
+    text-align: left;  
+    color: #333;          
+    max-width: 600px;     
+    margin: 20px auto;    
+    padding: 0 10px; 
+}
+
+.cp{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.ul-navbar {
+    display: flex;
+    justify-content: right; 
+    align-items: center;            
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.ul-navbar2 {
+    display: flex;            
+    justify-content:flex-start; 
+    align-items: center;        
+    padding: 10px 20px;
+    margin: 0;
+    list-style: none; 
+    gap: 5px;
+}
+
+
+.li-navbar,
+.li-navbar2 {
+    list-style-type: none;
+    margin: 0 5px;
+}
+
+
+.li-navbar2 {
+    font-family: 'Times New Roman', serif;
+    justify-content: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.btn1 {
+    background-color: #977dff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    gap: 10px;
+}
+
+.btn1:hover {
+    background-color: #7226ff;
+    transform: scale(1,1);
+}
+
+.btn1 a {
+    color: white;            
+    text-decoration: none;    
+    font-size: 14px;
+    font-weight: 500;
+}
