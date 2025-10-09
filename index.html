@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>post 1</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul class="ul-navbar">
+            <li class="nama">Alyaluna Sasmita</li>
+            <li class="nim">24416255201032</li>
+            <li>
+                <button class="btn">
+                    <a href="https://ubpkarawang.ac.id">Universitas Buana Perjuangan Karawang</a>
+                </button>
+            </li>
+            <li>
+                <button class="btn">
+                    <a href="https://alyalunasasmita.github.io/ubpkarawang24032.github.io/ERD/">Post Sebelumnya</a>
+                </button>
+            </li>
+        </ul>
+        <h1>RELASI</h1>
+        <div class="container">
+        <p class="paragraf">
+                Relasi (Hubungan) menggambarkan bagaimana entitas berinteraksi atau saling berhubungan satu sama lain. Dalam ERD, hubugan digambarkan dengan 
+                rombus atau diamond yang terhubung dengan garis dari satu entitas ke entitas lain. Ada beberapa jenis relasi, diantaranya:
+            </p></li>
+
+        </div>
+        <div class="container">
+        <h3>Relasi One To One</h3>
+        <p>Satu entitas hanya berhubungan dengan satu entitas lain.
+            <br> contoh: satu mahasiswa hanya memiliki satu kartu mahasiswa dan satu kartu mahasiswa hanya dimiliki oleh satu mahasiswa.
+        </p>
+        <figure class="gambar">
+            <img src="one to one.png" alt="One to One">
+            <figcaption>gambaran relasi One to One</figcaption>
+        </figure>
+        </div>
+
+        </div>
+        <div class="container">
+        <h3>Relasi One To many</h3>
+        <p>Satu entitas dapat berhubungan dengan banyak entitas lain, 
+            namun entitas lain tersebut hanya berhubungan dengan satu entitas utama.
+            <br> contoh: satu wali dosen bisa memiliki banyak mahasiswa bimbingan, namun satu mahasiswa hanya bisa memiliki 
+            satu wali dosen.
+        </p>
+        <figure class="gambar">
+            <img src="one to many.png" alt="One to many">
+            <figcaption>gambaran relasi One to many</figcaption>
+        </figure>
+        </div>
+
+        </div>
+        <div class="container">
+        <h3>Relasi many to many</h3>
+        <p>Satu entitas dapat berhubungan dengan banyak entitas lain, dan sebaliknya.
+            Inilah hubungan yang sering ditemui di awal perancangan sistem, namun tidak disarankan 
+            digunakan secara langsung dalam ERD fisik (database relasional).
+            <br> contoh: Mahasiswa dapat mengambil banyak mata kuliah, dan satu mata kuliah dapat diambil oleh banyak mahasiswa.
+        </p>
+        <figure class="gambar">
+            <img src="many to many.png" alt="many to many">
+            <figcaption>gambaran relasi many to many</figcaption>
+        </figure>
+        </div>
+
+        
+        <h1>Mengapa Many-to-Many Tidak Baik Digunakan pada ERD?</h1>
+        <div class="container">
+        <ol>
+            <li><b>Sulit Diterapkan di Database Relasional</b>
+                <br>Database relasional tidak dapat menyimpan hubungan many-to-many secara langsung.
+                    Jika kita mencoba menyimpan dua entitas yang saling berhubungan banyak-banyak, sistem tidak tahu 
+                    cara menampilkannya secara efisien.
+            </li>
+            <li><b>Menyulitkan Proses Query</b>
+                <br>Hubungan M:N membuat query menjadi kompleks dan tidak efisien, terutama saat melakukan join data antar tabel.
+            </li>
+            <li><b>Menyebabkan Redundansi Data</b>
+                <br>Jika diterapkan langsung, data bisa berulang atau tidak konsisten karena hubungan ganda antar entitas.
+            </li>
+            <li><b>Tidak Sesuai dengan Prinsip Normalisasi</b>
+                <br>Dalam desain basis data, ada konsep normalisasi yang bertujuan untuk menghindari duplikasi dan menjaga integritas data.
+                    Relasi M:N melanggar prinsip ini, sehingga perlu diubah menjadi bentuk yang lebih efisien.
+            </li>
+        </ol>
+        </div>
+    </body>
+</html>
