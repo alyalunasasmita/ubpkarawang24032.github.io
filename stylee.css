@@ -1,0 +1,130 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;       
+    line-height: 1.7;      
+    text-align: justify;   
+    color: #333;           
+    max-width: 600px;      
+    margin: 10px auto;     
+    padding: 0 10px; 
+    text-decoration: none;
+}
+.li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;       
+    line-height: 1.7;      
+    text-align: justify;   
+    color: #333;           
+    max-width: 600px;      
+    margin: 10px auto;     
+    padding: 0 10px; 
+}
+
+.li-navbar{
+    font-size: 120%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 8px auto;
+}
+th, td{
+    border: 1px solid gray;
+    margin: 5px ;
+    padding: 10px;
+    background-color: #ffffff;
+}
+th{
+    background-color: beige;
+}
+
+.gambar{
+    text-align: center;
+    margin: 20px auto;
+}
+.gambar img{
+    max-width: 80%;
+    height: auto;
+    border: 1px solid #333;
+}
+.gambar figcaption{
+    font-size: 14px;
+    color:#333;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;      
+    line-height: 1.7;     
+    text-align: justify;   
+    color: #333;          
+    max-width: 600px;      
+    margin: 10px auto;    
+    padding: 0 10px; 
+}
+
+h2{
+    font-size: 150%;
+    color: cadetblue;
+    
+}
+
+h1 {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    font-family: 'Trebuchet MS';
+    
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 120%;
+    color: #000;
+    display: inline-block;
+}
+
+.btn {
+    border: 0px;
+    background: #FFD6BA;
+}
+.btn :hover {
+    background: #FFBDBD;
+    color: white;
+    transform: scale(1.05);
+}
+
+.ul-navbar {
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    background: #FEF9D9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    body {
+        background: linear-gradient(to bottom, #FFEAEA, #F5CBCB, #748DAE );
+    }

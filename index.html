@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylee.css">
+    </head>
+    <body>
+        <ul class="ul-navbar">
+            <li class="li-navbar">Alyaluna Sasmita</li>
+            <li class="li-navbar">24416255201032</li>
+            <li class="li-navbar">
+                <button class="btn">
+                    <a href="https://ubpkarawang.ac.id">Universitas Buana Perjuangan Karawang</a>
+                </button>
+            </li>
+            <li class="li-navbar">
+                <button class="btn">
+                    <a href="https://alyalunasasmita.github.io/ubpkarawang24032.github.io/relasi/">Post Sebelumnya</a>
+                </button>
+            </li>
+        </ul>
+        <h1>PRIMARY KEY, FOREIGN KEY, DAN CANDIDATE KEY</h1>
+        <div class="container">
+        <h2>Primary Key</h2>
+        <p>Primary key adalah atribut unik yang digunakan untuk membedakan 
+            setiap baris data dalam sebuah tabel. Nilainya tidak boleh 
+            <b>Kosong (NULL)</b>  dan <b>tidak boleh duplikat</b>
+            <br> Fungsinya sebagai identitas utama dari setiap entitas.
+        </p>
+        <p>perhatikan database dibawah ini</p>
+        <figure class="gambar">
+            <img src="primary key.png" alt=""> 
+            <figcaption>contoh Primary Key dalam ERD</figcaption>
+        </figure>
+            <h3>📘 Contoh Penjelasan pada Database di Atas</h3>
+            <ul>
+                <li class="li">pada tabel <b>dosen_wali</b>, atribut <b>id_dosen</b> berfungsi sebagai 
+                primary key unruk membedakan setiap wali dosen</li>
+                <li class="li">pada tabel <b>mahasiswa</b>, atribut <b>NIM</b> berfungsi sebagai primary key 
+                untuk membedakan setiap mahasiswa.</li>
+            </ul>
+            <p>
+                Tanda kunci berwarna kuning di sebelah atribut menunjukan bahwa kolom tersebut adalah primary key
+            </p>
+            </div>
+
+            <div class="container">
+        <h2>Foreign Key</h2>
+        <p>
+            Foreign Key adalah atribut yang menghubungkan dua tabel,
+            di mana nilainya berasal dari <b>Primary Key tabel lain.</b>
+            Digunakan untuk menunjukan relasi antar entitas. 
+            Fungsinya unruk menjaga integritas data antar tabel (relasi antar entitas tetap konsisten)
+        </p>
+        <figure class="gambar">
+            <img src="foreign key.png" alt=""> 
+            <figcaption>Relasi Foreign Key dalam ERD</figcaption>
+        </figure>
+        <p>Relasi antar tabel pada diagram tersebut merepresentasikan skema basis data 
+            universitas yang terdiri dari tabel dosen_wali, 
+            mahasiswa, jurusan, dan fakultas. Berikut penjelasan foreign key menurut diagram:</p>
+            <ul>
+                <li class="li"><b>mahasiswa</b>: dosen_wali_id_dosen mengacu pada nip di tabel dosen_wali</li>
+                <li class="li"><b>mahasiswa</b>: jurusan_kode_jurusan mengacu pada kode_jurusan di tabel jurusan</li>
+                <li class="li"><b>jurusan</b>: Fakultas_Kode_fakultas mengacu pada Kode_fakultas di tabel Fakultas</li>
+            </ul>
+            <p>Tanda kunci berwarna merah/oranye di sebelah atribut menunjukan bahwa kolom tersebut adalah foreign key</p>
+            </div>
+
+            <div class="container">
+        <h2>Candidate Key</h2>
+        <p>
+            Candidate Key adalah sekumpulan atribut yang bisa menjadi Primary Key karena nilainya unik dan tidak kosong.
+            Dari beberapa Candidate Key, satu dipilih sebagai Primary Key, sisanya disebut Alternate Key.
+            Fungsinya untuk Menentukan kemungkinan atribut unik lain di dalam tabel.
+        </p>
+        <table>
+            <tr>
+                <th>Entitas</th>
+                <th>Candidate Key</th>
+                <th>Keterangan</th>
+            </tr>
+            <tr>
+                <td>Mahasiswa</td>
+                <td>NIM, Email</td>
+                <td>Keduanya unik, tapi NIM dipilih menjadi primary key</td>
+            </tr>
+            <tr>
+                <td>Dosen</td>
+                <td>NIP, No_HP</td>
+                <td>dua-duanya bisa menjadi identitas unik</td>
+            </tr>
+            <tr>
+                <td>Pegawai</td>
+                <td>ID_Pegawai, Nomor_KTP</td>
+                <td>Keduanya unik</td>
+            </tr>
+            <tr>
+                <td>Barang</td>
+                <td>Kode_Barang, Serial_Number</td>
+                <td>Bisa dipilih salah satunya jadi Primary Key</td>
+            </tr>
+            <tr>
+                <td>Pelanggan</td>
+                <td>ID_Pelanggan, Email</td>
+                <td>Dua atribut unik</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
