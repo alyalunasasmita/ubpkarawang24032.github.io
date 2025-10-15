@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normalisasi pada ERD</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom right, #F5F7FA, #E4EBF1);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #748DA6;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #5C6E91;
+            margin-bottom: 10px;
+            border-left: 5px solid #748DA6;
+            padding-left: 10px;
+        }
+
+        h3 {
+            color: #4C5D73;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: justify;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #EAF0F6;
+        }
+
+        .note {
+            background: #F0F4F8;
+            border-left: 4px solid #748DA6;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            background: #748DA6;
+            color: white;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+        }
+
+        .ul-navbar {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: #F5F7FA;
+        }
+
+        button{
+            padding: 5px;
+            background-color: #5C6E91;
+        }
+
+        button :hover {
+            color: #EAF0F6;
+            background-color: #333;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            section { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="ul-navbar">
+            <li>Alyaluna Sasmita</li>
+            <li>24416255201032</li>
+            <li>
+                <button>
+                    <a href="https://ubpkarawang.ac.id/">UBP Karawang</a>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <a href="https://alyalunasasmita.github.io/ubpkarawang24032.github.io/relasi/">Post sebelumnya</a>
+                </button>
+            </li>
+        </ul>
+        <h1>Normalisasi pada ERD</h1>
+        <p style="display: flex; align-items: center; justify-content: center;">Memahami Tahapan Normalisasi untuk Struktur Database yang Efisien</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Pengertian Normalisasi</h2>
+            <p>
+                Normalisasi adalah proses penyusunan struktur tabel dalam database agar data tidak berulang (redundan) dan tetap konsisten. 
+                Proses ini dilakukan setelah rancangan awal ERD selesai dibuat, untuk menghasilkan tabel yang efisien dan mudah dikelola.
+            </p>
+        </section>
+
+        <section>
+            <h2>Tujuan Normalisasi</h2>
+            <ul>
+                <li>Menghilangkan duplikasi data.</li>
+                <li>Menjaga integritas dan konsistensi data.</li>
+                <li>Memecah data menjadi tabel-tabel kecil yang saling berelasi.</li>
+                <li>Mempermudah proses update dan maintenance database.</li>
+                <li>Menghindari anomali data (insert, update, delete).</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Bentuk-Bentuk Normalisasi</h2>
+
+            <h3>1NF (First Normal Form)</h3>
+            <p><strong>Syarat:</strong> Setiap kolom hanya menyimpan satu nilai (atomic value).</p>
+            <p><strong>Contoh (Belum 1NF):</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Nama</th><th>Mata Kuliah</th></tr>
+                <tr><td>101</td><td>Rani</td><td>Basis Data, PBO</td></tr>
+            </table>
+            <p><strong>Setelah 1NF:</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Nama</th><th>Mata Kuliah</th></tr>
+                <tr><td>101</td><td>Rani</td><td>Basis Data</td></tr>
+                <tr><td>101</td><td>Rani</td><td>PBO</td></tr>
+            </table>
+
+            <h3>2NF (Second Normal Form)</h3>
+            <p><strong>Syarat:</strong> Sudah 1NF dan semua atribut non-key bergantung penuh pada primary key.</p>
+            <p><strong>Contoh (Belum 2NF):</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Kode_MK</th><th>Nama_Mhs</th><th>Nama_MK</th><th>SKS</th></tr>
+                <tr><td>101</td><td>BD01</td><td>Rani</td><td>Basis Data</td><td>3</td></tr>
+            </table>
+            <p><strong>Setelah 2NF:</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Nama_Mhs</th></tr>
+                <tr><td>101</td><td>Rani</td></tr>
+            </table>
+            <table>
+                <tr><th>NIM</th><th>Kode_MK</th><th>Nama_MK</th><th>SKS</th></tr>
+                <tr><td>101</td><td>BD01</td><td>Basis Data</td><td>3</td></tr>
+            </table>
+
+            <h3>3NF (Third Normal Form)</h3>
+            <p><strong>Syarat:</strong> Sudah 2NF dan tidak ada ketergantungan antar atribut non-key (transitive dependency).</p>
+            <p><strong>Contoh (Belum 3NF):</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Nama_Mhs</th><th>Kode_Prodi</th><th>Nama_Prodi</th></tr>
+                <tr><td>101</td><td>Rani</td><td>IF</td><td>Informatika</td></tr>
+            </table>
+            <p><strong>Setelah 3NF:</strong></p>
+            <table>
+                <tr><th>NIM</th><th>Nama_Mhs</th><th>Kode_Prodi</th></tr>
+                <tr><td>101</td><td>Rani</td><td>IF</td></tr>
+            </table>
+            <table>
+                <tr><th>Kode_Prodi</th><th>Nama_Prodi</th></tr>
+                <tr><td>IF</td><td>Informatika</td></tr>
+            </table>
+
+            <h3>BCNF (Boyce-Codd Normal Form)</h3>
+            <p>Merupakan penyempurnaan dari 3NF. Setiap determinant harus merupakan candidate key. Biasanya digunakan jika masih ada anomali setelah 3NF.</p>
+        </section>
+
+        <section>
+            <h2>Kesimpulan</h2>
+            <p>
+                Normalisasi merupakan langkah penting setelah pembuatan ERD. 
+                Dengan melakukan normalisasi, kita memastikan struktur tabel menjadi efisien, bebas redundansi, 
+                dan mudah dikelola. Normalisasi bukan hanya tentang memecah tabel, tetapi juga menjaga konsistensi dan integritas data dalam sistem informasi.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2025 Tugas Mata kuliah Basis Data | Normalisasi pada ERD
+    </footer>
+</body>
+</html>
